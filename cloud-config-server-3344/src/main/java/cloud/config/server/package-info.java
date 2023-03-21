@@ -2,5 +2,5 @@
 @NonNullFields
 package cloud.config.server;
 
-import io.micrometer.core.lang.NonNullApi;
-import io.micrometer.core.lang.NonNullFields;
+import org.springframework.lang.NonNullApi;
+import org.springframework.lang.NonNullFields;
