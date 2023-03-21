@@ -1,6 +1,10 @@
 spring:
   application:
     name: "cloud-service-consumer"
+  profiles:
+    active:
+      - "default"
+      - "dev"
   cloud:
     config:
       label: "master"

@@ -12,6 +12,10 @@
     -->
     <logger name="org.springframework" additivity="true" level="info"/>
     <logger name="org.jboss.logging" additivity="true" level="warn"/>
+    <logger name="io.netty" additivity="true" level="info"/>
+    <logger name="com.netflix.discovery" additivity="true" level="info"/>
+    <logger name="com.netflix.eureka" additivity="true" level="info"/>
+    <logger name="org.apache.http" additivity="true" level="info"/>
 
     <root level="DEBUG">
         <appender-ref ref="STDOUT"/>

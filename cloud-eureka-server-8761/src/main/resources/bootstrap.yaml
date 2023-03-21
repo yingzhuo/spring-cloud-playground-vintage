@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: "cloud-eureka-server"
+  profiles:
+    active:
+      - "default"

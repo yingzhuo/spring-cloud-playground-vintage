@@ -1,6 +1,7 @@
-#spring:
-#  application:
-#    name: "cloud-service-consumer"
+spring:
+  profiles:
+    active:
+      - "default"
 
 server:
   port: 80
@@ -8,7 +9,7 @@ server:
 eureka:
   instance:
     # 显示在eureka-dashboard上的名称
-    instance-id: "cloud-service-consumer-80"
+    instance-id: "${spring.application.name}-${server.port}"
     # 在eureka-dashboard上显示IP
     prefer-ip-address: true
   client:

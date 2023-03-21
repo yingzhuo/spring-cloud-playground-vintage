@@ -1,0 +1,6 @@
+spring:
+  application:
+    name: "cloud-config"
+  profiles:
+    active:
+      - "native"  # 使用本地文件当做文件存储目录必须激活此profile

@@ -1,9 +1,4 @@
 spring:
-  application:
-    name: "cloud-config"
-  profiles:
-    include:
-      - "native"  # 使用本地文件当做文件存储目录必须激活此profile
   cloud:
     config:
       server:
@@ -18,7 +13,7 @@ server:
 eureka:
   instance:
     # 显示在eureka-dashboard上的名称
-    instance-id: "cloud-config-3344"
+    instance-id: "${spring.application.name}-${server.port}"
     # 在eureka-dashboard上显示IP
     prefer-ip-address: true
   client:
