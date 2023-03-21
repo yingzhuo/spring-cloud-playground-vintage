@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: "cloud-eureka-server"
+
+server:
+  port: 8761
+
+eureka:
+  instance:
+    hostname: "localhost"
+  client:
+    # 不向自己注册
+    register-with-eureka: false
+    # 自己即为注册中心，无需去检索服务
+    fetch-registry: false
+    service-url:
+      defaultZone: "http://${eureka.instance.hostname}:${server.port}/eureka/"
+  server:
+    # 自我保护模式
+    enable-self-preservation: false
+    # 剔除服务时间
+    eviction-interval-timer-in-ms: 5000

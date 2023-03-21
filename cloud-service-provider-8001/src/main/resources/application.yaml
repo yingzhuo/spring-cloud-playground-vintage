@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: "cloud-service-provider"
+
+server:
+  port: 8001
+
+eureka:
+  instance:
+    # 显示在eureka-dashboard上的名称
+    instance-id: "cloud-service-provider-8001"
+    # 在eureka-dashboard上显示IP
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: "http://localhost:8761/eureka"

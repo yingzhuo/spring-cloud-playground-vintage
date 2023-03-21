@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: "cloud-service-consumer"
+
+server:
+  port: 80
+
+eureka:
+  instance:
+    # 显示在eureka-dashboard上的名称
+    instance-id: "cloud-service-consumer-80"
+    # 在eureka-dashboard上显示IP
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: "http://localhost:8761/eureka"
+
+feign:
+  hystrix:
+    enabled: true

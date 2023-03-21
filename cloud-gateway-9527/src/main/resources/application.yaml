@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: "cloud-gateway"
+  profiles:
+    include:
+      - "actuator"
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: "service-provider"
+          uri: "lb://cloud-service-provider"
+          predicates:
+            - "Path=/service-provider/**, /cloud-service-provider/**"
+          filters:
+            - "RewritePath=^/.*service-provider/(?<segment>.*)$,/${segment}"
+
+server:
+  port: 9527
+
+eureka:
+  instance:
+    # 显示在eureka-dashboard上的名称
+    instance-id: "cloud-gateway-9527"
+    # 在eureka-dashboard上显示IP
+    prefer-ip-address: true
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: "http://localhost:8761/eureka"
