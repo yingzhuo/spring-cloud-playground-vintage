@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: "cloud-service-consumer"
+  cloud:
+    config:
+      label: "master"
+      name: "${spring.application.name}"
+      profile: "dev"
+      uri: "http://localhost:3344"
+      fail-fast: false
