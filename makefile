@@ -20,5 +20,6 @@ github: clean
 	@git status
 	@git add .
 	@git commit -m "$(shell /bin/date "+%F %T")"
+	@git push
 
 .PHONY: usage clean compile package github

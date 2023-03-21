@@ -1,0 +1,37 @@
+= spring-cloud-playground
+
+image:https://img.shields.io/badge/License-Apache%202.0-red.svg[link="http://www.apache.org/licenses/LICENSE-2.0"]
+
+[,text]
+----
+       __                                             __
+.-----|  .---.-.--.--.-----.----.-----.--.--.-----.--|  |
+|  _  |  |  _  |  |  |  _  |   _|  _  |  |  |     |  _  |
+|   __|__|___._|___  |___  |__| |_____|_____|__|__|_____|
+|__|           |_____|_____|
+----
+
+SpringCloud, SpringBoot及SpringFramework演示或实验环境。 +
+(这个项目没有什么好看的，不要浪费你的时间。)
+
+== 需求
+
+* [red]#Java 17+#
+* [red]#SpringFramework 6.0.0+#
+* [red]#SpringBoot 3.0.0+#
+* [red]#SpringSecurity 6.0.0+#
+
+== 构建本项目
+
+[,bash]
+----
+make package
+----
+
+== 许可证
+
+* link:{docdir}/LICENSE[Apache 2]
+
+== 作者
+
+* mailto:yingzhor@gmail.com[应卓]
