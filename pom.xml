@@ -10,6 +10,7 @@
     <modules>
         <module>cloud-api-commons</module>
         <module>cloud-eureka-server-8761</module>
+        <module>cloud-config-server-3344</module>
         <module>cloud-gateway-9527</module>
         <module>cloud-service-provider-8001</module>
         <module>cloud-service-provider-8002</module>

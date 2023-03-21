@@ -1,4 +1,4 @@
-= spring-cloud-playground
+= spring-cloud-playground-vintage
 
 image:https://img.shields.io/badge/License-Apache%202.0-red.svg[link="http://www.apache.org/licenses/LICENSE-2.0"]
 
@@ -11,15 +11,12 @@ image:https://img.shields.io/badge/License-Apache%202.0-red.svg[link="http://www
 |__|           |_____|_____|
 ----
 
-SpringCloud, SpringBoot及SpringFramework演示或实验环境。 +
+SpringCloud (老版本), SpringBoot及SpringFramework演示或实验环境。 +
 (这个项目没有什么好看的，不要浪费你的时间。)
 
 == 需求
 
-* [red]#Java 17+#
-* [red]#SpringFramework 6.0.0+#
-* [red]#SpringBoot 3.0.0+#
-* [red]#SpringSecurity 6.0.0+#
+* [red]#Java 8#
 
 == 构建本项目
 
